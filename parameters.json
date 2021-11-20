@@ -2,89 +2,20 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": {
-                "type": "String",
-                "value": "fcc21a2c-dc5c-410a-be71-e45589578474"
-            }
+        "sites_dunetwo_name": {
+            "value": null
         },
-        "name": {
-            "value": {
-                "type": "String",
-                "value": "dunetwo"
-            }
+        "components_dunetwo_name": {
+            "value": null
         },
-        "location": {
-            "value": {
-                "type": "String",
-                "value": "Central US"
-            }
+        "serverfarms_ASP_DuneTwo_a309_name": {
+            "value": null
         },
-        "hostingPlanName": {
-            "value": {
-                "type": "String",
-                "value": "ASP-DuneTwo-a309"
-            }
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
         },
-        "serverFarmResourceGroup": {
-            "value": {
-                "type": "String",
-                "value": "DuneTwo"
-            }
-        },
-        "alwaysOn": {
-            "value": {
-                "type": "Bool",
-                "value": true
-            }
-        },
-        "sku": {
-            "value": {
-                "type": "String",
-                "value": "PremiumV2"
-            }
-        },
-        "skuCode": {
-            "value": {
-                "type": "String",
-                "value": "P1v2"
-            }
-        },
-        "workerSize": {
-            "value": {
-                "type": "String",
-                "value": "3"
-            }
-        },
-        "workerSizeId": {
-            "value": {
-                "type": "String",
-                "value": "3"
-            }
-        },
-        "numberOfWorkers": {
-            "value": {
-                "type": "String",
-                "value": "1"
-            }
-        },
-        "linuxFxVersion": {
-            "value": {
-                "type": "String",
-                "value": "NODE|14-lts"
-            }
-        },
-        "repoUrl": {
-            "value": {
-                "type": "String",
-                "value": "https://github.com/IanHinden/DuneTwo"
-            }
-        },
-        "branch": {
-            "value": {
-                "type": "String",
-                "value": "main"
-            }
+        "workspaces_DefaultWorkspace_fcc21a2c_dc5c_410a_be71_e45589578474_CUS_externalid": {
+            "value": null
         }
     }
 }
