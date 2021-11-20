@@ -18,7 +18,7 @@
             "type": "String"
         },
         "alwaysOn": {
-            "type": "String"
+            "type": "Bool"
         },
         "sku": {
             "type": "String"
@@ -78,7 +78,7 @@
                         }
                     ],
                     "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                    "alwaysOn": "[bool(parameters('alwaysOn'))]"
+                    "alwaysOn": "[parameters('alwaysOn')]"
                 },
                 "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "clientAffinityEnabled": false
@@ -92,7 +92,7 @@
                         "[resourceId('Microsoft.Web/Sites', parameters('name'))]"
                     ],
                     "properties": {
-                        "RepoUrl": "[parameters('repoUrl')]",
+                        "RepoUrl": "uri([parameters('repoUrl'))]",
                         "branch": "[parameters('branch')]",
                         "IsManualIntegration": false,
                         "deploymentRollbackEnabled": false,
