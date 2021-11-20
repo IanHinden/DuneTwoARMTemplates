@@ -18,7 +18,7 @@
             "type": "String"
         },
         "alwaysOn": {
-            "type": "Bool"
+            "type": "String"
         },
         "sku": {
             "type": "String"
@@ -78,7 +78,7 @@
                         }
                     ],
                     "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                    "alwaysOn": "[parameters('alwaysOn')]"
+                    "alwaysOn": "[bool(parameters('alwaysOn'))]"
                 },
                 "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "clientAffinityEnabled": false

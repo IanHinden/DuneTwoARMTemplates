@@ -34,8 +34,8 @@
         },
         "alwaysOn": {
             "value": {
-                "type": "Bool",
-                "value": true
+                "type": "String",
+                "value": "true"
             }
         },
         "sku": {
