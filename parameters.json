@@ -3,19 +3,34 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sites_dunetwo_name": {
-            "value": null
+            "value": {
+                "type": "String",
+                "value": "dunetwo"
+            }
         },
         "components_dunetwo_name": {
-            "value": null
+            "value": {
+                "type": "String",
+                "value": "dunetwo"
+            }
         },
         "serverfarms_ASP_DuneTwo_a309_name": {
-            "value": null
+            "value": {
+                "type": "String",
+                "value": "ASP-DuneTwo-a309"
+            }
         },
         "actionGroups_Application_Insights_Smart_Detection_name": {
-            "value": null
+            "value": {
+                "type": "String",
+                "value": "Application Insights Smart Detection"
+            }
         },
         "workspaces_DefaultWorkspace_fcc21a2c_dc5c_410a_be71_e45589578474_CUS_externalid": {
-            "value": null
+            "value": {
+                "type": "String",
+                "value": "/subscriptions/fcc21a2c-dc5c-410a-be71-e45589578474/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-fcc21a2c-dc5c-410a-be71-e45589578474-CUS"
+            }
         }
     }
 }
